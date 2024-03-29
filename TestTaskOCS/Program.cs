@@ -1,8 +1,11 @@
+using TestTaskOCS.Extentions;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddRazorPages();
 builder.Services.AddMvc();
 builder.Services.AddRouting();
+builder.Services.AddApplicationContextServices();
 
 
 var app = builder.Build();

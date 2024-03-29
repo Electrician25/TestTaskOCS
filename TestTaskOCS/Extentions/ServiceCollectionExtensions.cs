@@ -1,9 +1,12 @@
-﻿namespace TestTaskOCS.Extentions
+﻿using TestTaskOCS.CrudService;
+
+namespace TestTaskOCS.Extentions
 {
     public static class ServiceCollectionExtensions
     {
-        public static IServiceCollection AddCategoryCrudServices(this IServiceCollection services)
+        public static IServiceCollection AddApplicationContextServices(this IServiceCollection services)
         {
+            services.AddTransient<MeetingRequestCrudServices>();
             return services;
         }
     }
