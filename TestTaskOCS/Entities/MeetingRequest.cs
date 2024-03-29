@@ -6,7 +6,8 @@ namespace TestTaskOCS.Entities
     {
         [Key]
         public int Id { get; set; }
-        public string RequestTopic { get; set; } = null!;
+
+        public RequesTopic RequesTopic;
 
         [StringLength(100)]
         public string MeetingName { get; set; } = null!;
