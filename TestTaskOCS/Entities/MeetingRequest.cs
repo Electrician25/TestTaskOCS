@@ -7,13 +7,13 @@ namespace TestTaskOCS.Entities
         [Key]
         public int Id { get; set; }
 
-        public RequesTopic RequesTopic;
+        public string RequestTopic { get; set; } = null!;
 
         [StringLength(100)]
         public string MeetingName { get; set; } = null!;
 
         [StringLength(300)]
-        public string MeetinDescription { get; set; }
+        public string? MeetingDescription { get; set; }
 
         [StringLength(1000)]
         public string MeetingPlan { get; set; } = null!;
