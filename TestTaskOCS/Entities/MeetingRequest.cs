@@ -5,9 +5,15 @@ namespace TestTaskOCS.Entities
     public class MeetingRequest
     {
         [Key]
-        public int Id { get; set; }
+        public Guid Id { get; set; }
 
         public string RequestTopic { get; set; } = null!;
+
+        public Guid Author { get; set; }
+
+        public DateTime Date { get; set; }
+
+        public bool IsRequestSend { get; set; }
 
         [StringLength(100)]
         public string MeetingName { get; set; } = null!;
