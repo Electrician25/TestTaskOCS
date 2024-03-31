@@ -1,6 +1,6 @@
 ﻿using TestTaskOCS.Entities;
 
-namespace TestTaskOCS.Interfaces
+namespace TestTaskOCS.MeetingRequestInterface
 {
     public interface IMeetingRequestCrudServices
     {

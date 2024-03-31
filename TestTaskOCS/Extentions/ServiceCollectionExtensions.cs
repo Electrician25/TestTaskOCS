@@ -1,6 +1,5 @@
 ﻿using TestTaskOCS.CrudService;
-using TestTaskOCS.Interfaces;
-using TestTaskOCS.JwtProvider;
+using TestTaskOCS.MeetingRequestInterface;
 
 namespace TestTaskOCS.Extentions
 {
@@ -8,8 +7,7 @@ namespace TestTaskOCS.Extentions
     {
         public static IServiceCollection AddApplicationtServices(this IServiceCollection services)
         {
-            services.AddTransient<IMeetingRequestCrudServices, MeetingRequestCrudServices>();
-            services.AddTransient<IJwtService, JwtService>();
+            services.AddTransient<IMeetingRequestCrudServices, MeetingRequestCrudService>();
             return services;
         }
     }
