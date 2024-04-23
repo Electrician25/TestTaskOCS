@@ -16,3 +16,9 @@ Test-Task
 получение заявки по идентификатору - /api/meetings/{ID}
 
 получение списка возможных типов активности - /api/meetingTopic/{ID}
+
+
+## Technology Stack:
+* ASP.NET Core
+* .NET
+* API
